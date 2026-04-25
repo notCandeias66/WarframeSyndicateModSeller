@@ -49,7 +49,7 @@ class WarframeMarketClient:
             "Authorization": f"JWT {jwt_token}",
             "User-Agent": "Mozilla/5.0"
         })
-        self.session.cookies.set("JWT", jwt_token, domain="warframe.market")
+        self.session.cookies.set("JWT", jwt_token, domain="api.warframe.market")
         log.info("✅ Client initialized with JWT token (platform: %s)", platform)
 
     def _get(self, path: str) -> Optional[Dict]:
