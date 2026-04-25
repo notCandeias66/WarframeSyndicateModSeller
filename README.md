@@ -41,6 +41,21 @@ pip install requests
 
 ---
 
+## Security Notice
+
+> ⚠️ **Your JWT token is a sensitive credential.** Treat it like a password.
+>
+> - **Never commit `config.json` with a real token to a public repository.** Add `config.json` to your `.gitignore` to prevent accidental exposure.
+> - If you accidentally push your token publicly, log out of Warframe Market immediately to invalidate it, then get a new one.
+> - The `config.json` file in this repo contains only a placeholder (`"your_jwt_token_here"`) — fill it in locally and keep it private.
+
+A recommended `.gitignore` entry:
+
+```
+config.json
+warframe_seller.log
+```
+
 ## Setup
 
 **1. Clone or download the project files:**
