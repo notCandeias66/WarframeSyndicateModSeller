@@ -2,9 +2,28 @@
 
 A Python automation tool that manages sell orders on [Warframe Market](https://warframe.market) for syndicate mods. It checks live market prices, creates or updates listings when prices are profitable, and removes listings when the market drops below a configurable minimum.
 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Requests](https://img.shields.io/badge/Requests-HTTP-green)
+
 ---
 
-## What it does
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Security Notice](#security-notice)
+- [Setup](#setup)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [How the pricing works](#how-the-pricing-works)
+- [Output](#output)
+- [Project Structure](#project-structure)
+- [Notes](#notes)
+
+---
+
+## About the Project
 
 Selling syndicate mods on Warframe Market manually is repetitive: you have to look up each mod's current price, decide if it's worth listing, and either create, update, or remove your order. With dozens of mods across multiple syndicates, this becomes tedious.
 
